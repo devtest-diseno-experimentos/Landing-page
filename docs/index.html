@@ -52,16 +52,16 @@
                 <a href="index.html"><img src="assets/images/responsive-logo.png" ></a>
 
             </div>
-            <div id='cssmenu'>
+            <div id='cssmenu' role="navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='index.html' aria-current="page">Home</a></li>
                     <li><a href='#services'>Services</a></li>
                     <li><a href='#subscriptions'>Plans</a></li>
                     <li><a href='#about-us'>About Us</a></li>
                     <li><a href='#contact-us'>Contact Us</a></li>
-
                 </ul>
             </div>
+
         </div>
     </div>
 </header>
@@ -71,13 +71,13 @@
     <!-- Slide 1 -->
     <div class="item">
         <div class="img-fill">
-            <img src="assets/images/main_slide_01.jpg" alt="">
+            <img src="assets/images/main_slide_01.jpg" alt="Car2Go" aria-hidden="true">
             <div class="info">
                 <div >
                     <h5>CAR2GO HAS THE BEST CHOICE</h5>
                     <h3>Looking For Perfect <em>Car</em>?</h3>
                     <h6 class="secondary-button">
-                        <a href="#">Find Your Car <i class="fa fa-car"></i></a>
+                        <a href="#" aria-label="Find your car">Find Your Car <i class="fa fa-car"></i></a>
                     </h6>
                 </div>
             </div>
@@ -87,13 +87,13 @@
     <!-- Slide 2 -->
     <div class="item">
         <div class="img-fill">
-            <img src="assets/images/main_slide_02.jpg" alt="">
+            <img src="assets/images/main_slide_02.jpg" alt="Car2Go" aria-hidden="true">
             <div class="info">
                 <div>
-                    <h5>CARS2GO HAS THE BEST CHOICE</h5>
-                    <h3>Looking For Perfect <em>Car</em>?</h3>
+                    <h5>SELL YOUR CAR WITH EASE</h5>
+                    <h3>Want To Sell Your <em>Car</em>?</h3>
                     <h6 class="secondary-button">
-                        <a href="#">Find Your Car <i class="fa fa-car"></i></a>
+                        <a href="#" aria-label="Sell your car">Sell Your Car <i class="fa fa-tag"></i></a>
                     </h6>
                 </div>
             </div>
@@ -103,13 +103,13 @@
     <!-- Slide 3 -->
     <div class="item">
         <div class="img-fill">
-            <img src="assets/images/main_slide_03.jpg" alt="">
+            <img src="assets/images/main_slide_03.jpg" alt="Car2Go" aria-hidden="true">
             <div class="info">
                 <div>
-                    <h5>CARS2GO HAS THE BEST CHOICE</h5>
-                    <h3>Looking For Perfect <em>Car</em>?</h3>
+                    <h5>JOIN OUR NETWORK</h5>
+                    <h3>Do You Own a <em>Workshop</em>?</h3>
                     <h6 class="secondary-button">
-                        <a href="#">Find Your Car <i class="fa fa-car"></i></a>
+                        <a href="#" aria-label="Join Us Now">Join Us Now <i class="fa fa-wrench"></i></a>
                     </h6>
                 </div>
             </div>
@@ -213,11 +213,12 @@
     <div class="features-search-section">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6">
+                <!-- Cards Section (2x2 grid on the left) -->
+                <div class="col-md-7">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="service-item wow fadeIn" data-wow-duration="0.75s">
-                                <i class="fa fa-car"></i>
+                                <i class="fa fa-car" aria-hidden="true"></i>
                                 <div class="text-content">
                                     <h6>Safe Buying and Selling</h6>
                                     <p>We offer secure and reliable transactions so you can buy or sell your car with complete peace.</p>
@@ -226,7 +227,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item wow fadeIn" data-wow-duration="0.75s">
-                                <i class="fa fa-search"></i>
+                                <i class="fa fa-search" aria-hidden="true"></i>
                                 <div class="text-content">
                                     <h6>Quality Verification</h6>
                                     <p>We ensure that every vehicle on the platform meets high safety standards with complete peace.</p>
@@ -235,7 +236,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item wow fadeIn" data-wow-duration="0.75s">
-                                <i class="fa fa-users"></i>
+                                <i class="fa fa-users" aria-hidden="true"></i>
                                 <div class="text-content">
                                     <h6>Specialized Workshops</h6>
                                     <p>We have technical workshops that certify and ensure the optimal condition of the vehicles.</p>
@@ -244,7 +245,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item wow fadeIn" data-wow-duration="0.75s">
-                                <i class="fa fa-lock"></i>
+                                <i class="fa fa-lock" aria-hidden="true"></i>
                                 <div class="text-content">
                                     <h6>Secure Payments</h6>
                                     <p>We guarantee secure and reliable payments, protecting your transactions at all times.</p>
@@ -253,11 +254,18 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Image Section (Smaller image on the right) -->
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <div class="wow fadeIn" data-wow-duration="0.75s">
+                        <img src="assets/images/services.png" alt="Service illustration" class="service-image">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <section id="subscriptions" class="subscriptions">
     <div class="container">
@@ -368,7 +376,7 @@
                         <i class="fa fa-bullseye"></i>
                         <div class="text-content">
                             <h6>Mission</h6>
-                            <p>Our mission is to facilitate the buying and selling of second-hand cars by providing the necessary tools to make the process simple, safe, and reliable. We aim to ensure a smooth and trustworthy experience.</p></div>
+                            <p>Our mission is to facilitate the buying and selling of second-hand cars by providing the necessary tools to make the process simple, safe, and reliable. </p></div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -564,7 +572,7 @@
         <div class="container">
             <div class="title-card">
                 <div>
-                    <h3>Our <em>Collaborators</em></h3>
+                    <h3>Our <em>Team</em></h3>
                 </div>
             </div>
             <div id="owl-testimonials" class="owl-carousel owl-theme">
@@ -744,6 +752,48 @@
 			</div>
 		</div>
 	</section>-->
+
+
+<!--
+<div class="car-list">
+
+    <div class="car-item">
+        <img src="assets/images/car_item_1.jpg" alt="Car Image">
+        <div class="car-details">
+            <h4>Brand: BMW</h4>
+            <h5>Model: X5</h5>
+        </div>
+        <div class="car-status completed">
+            <p>Technical Review Completed, Congratulations!</p>
+        </div>
+    </div>
+
+
+    <div class="car-item">
+        <img src="assets/images/car_item_1.jpg" alt="Car Image">
+        <div class="car-details">
+            <h4>Brand: Toyota</h4>
+            <h5>Model: Corolla</h5>
+        </div>
+        <div class="car-status in-progress">
+            <p>Technical Review In Progress...</p>
+        </div>
+    </div>
+
+
+    <div class="car-item">
+        <img src="assets/images/car_item_1.jpg" alt="Car Image">
+        <div class="car-details">
+            <h4>Brand: Ford</h4>
+            <h5>Model: Fiesta</h5>
+        </div>
+        <div class="car-status canceled">
+            <p>Technical Review Canceled</p>
+        </div>
+    </div>
+</div>
+-->
+
 <section id="contact-us">
     <div class="contact-content wow fadeIn" data-wow-delay="0.5s" data-wow-duration=".5s">
         <div class="container">
@@ -756,7 +806,7 @@
                         <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <input type="text" class="blog-search-field" name="name" placeholder="Your name..." value="">
+                                    <input type="text" class="blog-search-field" name="name" placeholder="Your name..." aria-label="Your name">
                                 </div>
                                 <div class="col-md-4 col-sm-4 col-xs-6">
                                     <input type="text" class="blog-search-field" name="email" placeholder="Your email..." value="">

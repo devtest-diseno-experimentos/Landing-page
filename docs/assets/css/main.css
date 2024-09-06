@@ -26,6 +26,62 @@ Primary use:    Car Dealer
 
 /* 01. Main & Elements Starts */
 
+/* Por el momento, no es necesario modificar este archivo
+.car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.car-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.car-status {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.car-status.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.car-status.in-progress {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.car-status.canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+*/
+
 body {
     font-family: 'Roboto', sans-serif
 }
@@ -2773,45 +2829,37 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
 	    }
 	}
 
-    .features-search-section img {
-        max-width: 330%;
 
+
+    .service-item {
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        padding: 30px 30px 12px 30px;
+        border-radius: 5px;
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s
+    }
+
+    .service-item:hover {
+        border-bottom: 3px solid #2959ad
+    }
+
+    .service-item:hover i {
+        background-color: #2959ad;
+        color: #fff
+    }
+    .features-search-section img{
+        width: 225%;
         height: auto;
     }
-
-.service-item {
-    background-color: #fff;
-    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-    padding: 30px 10px 12px 10px;
-    border-radius: 5px;
-    border-bottom: 3px solid transparent;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    margin: 0 auto;
-    flex: 1 1 calc(25% - 20px); /* Adjust width and spacing */
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-	.service-item:hover {
-	    border-bottom: 3px solid #2959ad
-	}
-
-	.service-item:hover i {
-	    background-color: #2959ad;
-	    color: #fff
-	}
-    .features-search-section .row {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
     .features-search-section {
-
-        margin-bottom: 30px;
+        margin-top:20px;
+        margin-bottom: 50px;
     }
+
 	@media (max-width:865px) {
 	    .service-item {
 	        margin-bottom: 30px
@@ -2820,7 +2868,13 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
             flex-direction: column;
             align-items: center;
         }
-	}
+        .features-search-section {
+            margin-bottom: 40px;
+        }
+        .features-search-section img{
+            display:none;
+        }
+    }
 
 
 
@@ -2848,11 +2902,10 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
 	    margin-bottom: 10px;
         text-align: center;
 	}
-.service-item .text-content p{
-    text-align: center;
+    .service-item .text-content p{
+        text-align: center;
 
-}
-
+    }
 	.about-services .service-item {
 	    margin-bottom: 30px
 	}
@@ -2867,11 +2920,14 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
 	        display: none
 	    }
 	}
-	
+
 	@media (max-width:991px) {
 	    .features-search-section {
 	        margin-top: 30px
 	    }
+        .features-search-section img{
+            display:none;
+        }
 	}
 
 	.features-search-section .service-item {
@@ -3318,7 +3374,7 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
     margin-top: -150px;
 }
 	.more-about-us {
-	    margin-top: -80px
+	    margin-top: -30px
 	}
 
 	.more-about-us img {
@@ -3579,6 +3635,9 @@ only screen and (min-resolution:192dpi) and (max-width:1024px) {
 @media (max-width: 768px) {
     .subscription-card {
         margin-bottom: 30px;
+    }
+    .basic-plan-card {
+        margin-top: 10px;
     }
 
 }
