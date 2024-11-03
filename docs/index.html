@@ -13,6 +13,7 @@
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -26,7 +27,9 @@
     <!-- Animated Css -->
     <link rel="stylesheet" href="assets/css/animated.css">
 
-
+    <!-- jQuery y Bootstrap JS desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -68,7 +71,6 @@
 
 
 <div class="Modern-Slider">
-    <!-- Slide 1 -->
     <div class="item">
         <div class="img-fill">
             <img src="assets/images/main_slide_01.jpg" alt="Car2Go" aria-hidden="true">
@@ -83,8 +85,6 @@
             </div>
         </div>
     </div>
-    <!-- // Slide 1 -->
-    <!-- Slide 2 -->
     <div class="item">
         <div class="img-fill">
             <img src="assets/images/main_slide_02.jpg" alt="Car2Go" aria-hidden="true">
@@ -99,8 +99,6 @@
             </div>
         </div>
     </div>
-    <!-- // Slide 2 -->
-    <!-- Slide 3 -->
     <div class="item">
         <div class="img-fill">
             <img src="assets/images/main_slide_03.jpg" alt="Car2Go" aria-hidden="true">
@@ -115,7 +113,6 @@
             </div>
         </div>
     </div>
-    <!-- // Slide 3 -->
 </div>
 
 
@@ -213,7 +210,6 @@
     <div class="features-search-section">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <!-- Cards Section (2x2 grid on the left) -->
                 <div class="col-md-7">
                     <div class="row">
                         <div class="col-md-6">
@@ -254,7 +250,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Image Section (Smaller image on the right) -->
                 <div class="col-md-3 d-flex justify-content-center align-items-center">
                     <div class="wow fadeIn" data-wow-duration="0.75s">
                         <img src="assets/images/services.png" alt="Service illustration" class="service-image">
@@ -361,6 +356,9 @@
                         <span>Learn more about Car2Go</span>
                         <h4>Who are we and what do we do?</h4>
                         <p>Car2Go is a platform dedicated to simplifying and securing the process of buying and selling used cars in Peru. We strive to create a trustworthy environment where each transaction is backed by vehicle certification and a secure payment system. We believe in transparency and in providing our users with the peace of mind that they are making a safe and reliable purchase.</p>
+                        <button type="button" class="btn open-video-btn mt-3" data-bs-toggle="modal" data-bs-target="#videoModalProduct">
+                            <i class="fa fa-play-circle"></i> About the Product
+                        </button>
                     </div>
                 </div>
             </div>
@@ -409,6 +407,9 @@
             <div class="title-card">
                 <div>
                     <h3>Our <em>Team</em></h3>
+                    <button type="button" class="btn open-video-btn mt-3" data-bs-toggle="modal" data-bs-target="#videoModalTeam">
+                        <i class="fa fa-users"></i> About the Team
+                    </button>
                 </div>
             </div>
             <div id="owl-testimonials" class="owl-carousel owl-theme">
@@ -557,6 +558,37 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade video-modal" id="videoModalProduct" tabindex="-1" aria-labelledby="videoModalProductLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <video id="localVideoPlayerProduct" class="w-100" controls>
+                        <source src="assets/images/about-product.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade video-modal" id="videoModalTeam" tabindex="-1" aria-labelledby="videoModalTeamLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <video id="localVideoPlayerTeam" class="w-100" controls>
+                        <source src="assets/images/about-team.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <footer>
     <div class="container">
