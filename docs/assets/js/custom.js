@@ -22,8 +22,30 @@ $(document).ready(function() {
           });
       });
 
+    $(document).ready(function() {
+        const videoModalProduct = document.getElementById('videoModalProduct');
+        const videoModalTeam = document.getElementById('videoModalTeam');
+        const localVideoPlayerProduct = document.getElementById('localVideoPlayerProduct');
+        const localVideoPlayerTeam = document.getElementById('localVideoPlayerTeam');
 
-      $(function () {
+        videoModalProduct.addEventListener('show.bs.modal', function () {
+            localVideoPlayerProduct.play();
+        });
+        videoModalProduct.addEventListener('hidden.bs.modal', function () {
+            localVideoPlayerProduct.pause();
+            localVideoPlayerProduct.currentTime = 0;
+        });
+
+        videoModalTeam.addEventListener('show.bs.modal', function () {
+            localVideoPlayerTeam.play();
+        });
+        videoModalTeam.addEventListener('hidden.bs.modal', function () {
+            localVideoPlayerTeam.pause();
+            localVideoPlayerTeam.currentTime = 0;
+        });
+    });
+
+    $(function () {
         $('a[href="#search"]').on('click', function(event) {
             event.preventDefault();
             $('#search').addClass('open');
